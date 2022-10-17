@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: #1C2541;
+    height: 100vh;
+    width: 100vw;
+}
+
+#navigation{
+    background-color: #0B132B;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Oswald', sans-serif;
+    height: 6vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a:hover{
+    color: #5BC0BE;
+}
+
+.section_photos{
+    height: 15vw;
+    border-radius: 10%;
+    transition: all .3s;
+    margin-bottom: 1vh;
+    width: 20vw;
+}
+
+.section_photos:hover{
+    scale: 1.05;    
+
+}
+
+.navigation_photos{
+    border-radius: 30%;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    transition: all .3s;
+}
+
+.navigation_photos:hover{
+    scale: 1.05;
+}
+
+a{
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#main_content{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 94vh;
+}
+
+#stats{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80vw;
+    height: 60vh;
+}
+
+.stats__individual__check, .stats__team__check{
+    align-items: center;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    border-radius: 2%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    height: 22vw;
+    justify-content: center;
+    transition: all .3s;
+    width: 30vw;
+}
+
+.stats__individual__check:hover, .stats__team__check:hover{
+    color: #5BC0BE;
+    scale: 1.01;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    #stats{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .stats__individual__check, .stats__team__check{
+        font-size: 7vw;
+        height: 60vw;
+        width: 80vw;
+    }
+
+    .navigation_photos{
+        margin-left: 2vh;
+        margin-right: 3vh;
+    }
+
+    #navigation{
+        height: 8vh;
+        font-size: 4.5vw;
+    }
+
+    .section_photos{
+        height: 40vw;
+        width: 60vw;
+    }
+}
+
+
+
+/* #footer{
+    background-color: #3A506B;
+    color: #ffffff;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    height: 3vh;
+} */
