@@ -10,6 +10,18 @@ body{
     width: 100vw;
 }
 
+#index{
+    display: block
+}
+
+#individual{
+    display: none
+}
+
+#team{
+    display: none;
+}
+
 #navigation{
     background-color: #0B132B;
     color: #ffffff;

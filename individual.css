@@ -14,8 +14,9 @@
     background-color: #2b2b2b;
 }
 
-#main_content{
+#main_content_in{
     align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
